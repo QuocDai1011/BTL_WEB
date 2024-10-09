@@ -2,6 +2,9 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --darkgrey-color:#282A35;
+    --green-color:rgb(4, 170, 109);
+    --greenhover-color:#059862 ;
 }
 
 * {
@@ -13,4 +16,8 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
