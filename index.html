@@ -20,25 +20,26 @@
         <nav class="navbar">
             <div class="navbar-body-left">
                 <a href="https://www.w3schools.com/" class="navbar__home"><img class="navbar__home-img" src="./assets/img/faviconW3S.png" alt="Home"></a>
-                <a href="" class="navbar__selection">
+                <a href="#" class="navbar__selection js-navbar">
                     <div class="navbar__selection-item">
-                        <p class="navbar__selection-text">Tutorials</p>
+                        <p class="navbar__selection-text js-parent">Tutorials</p>
                         <i class="navbar__selection-icon fa-solid fa-caret-down"></i>
                     </div>
+
                 </a>
-                <a href="" class="navbar__selection">
+                <a href="#" class="navbar__selection js-navbar">
                     <div class="navbar__selection-item">
                         <p class="navbar__selection-text">Exercies</p>
                         <i class="navbar__selection-icon fa-solid fa-caret-down"></i>
                     </div>
                 </a>
-                <a href="" class="navbar__selection">
+                <a href="#" class="navbar__selection js-navbar">
                     <div class="navbar__selection-item">
                         <p class="navbar__selection-text">Certificates</p>
                         <i class="navbar__selection-icon fa-solid fa-caret-down"></i>
                     </div>
                 </a>
-                <a href="" class="navbar__selection">
+                <a href="#" class="navbar__selection js-navbar">
                     <div class="navbar__selection-item">
                         <p class="navbar__selection-text">Services</p>
                         <i class="navbar__selection-icon fa-solid fa-caret-down"></i>
@@ -85,11 +86,12 @@
                     </div>
                 </div>
             </div>
+
         </nav>
 
-        <!-- HEADER -->
-        <header class="header">
 
+        <!-- HEADER -->
+        <header style="height: 1400px;" class="header">
         </header>
 
         <!-- CONTENT -->
@@ -175,7 +177,968 @@
 
         </footer>
 
+        <!-- MODAL -->
+        <div class="modal">
+            <div class="modal-tutorials js-modal">
+                <div class="modal-tutorials__content">
+                    <header class="mdt-header">
+                        <h1 class="head">Tutorials</h1>
+                        <div class="filter">
+                            <input type="text" class="filter__search" placeholder="Filter...">
+                            <i class="fiter__icon fa-solid fa-xmark"></i>
+                        </div>
+                    </header>
+                    <div class="mdt-course-list">
+                        <div class="mdt-list-left">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">HTML and CSS</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> HTML</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> CSS</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> RWD</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Bootstrap</a>
+                                        <a href="" class="list-item-link">Overview</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> W3.CSS</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Sass</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Colors</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Icons</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> SVG</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Canvas</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Graphics</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Character Sets</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> How To</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list-left-bottom">
+                                <h3 class="list-left__header">Data Analytics</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> AI</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Generative AI</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> ChatGPT-3.5</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> ChatGPT-4</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Google Bard</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Machine Learning</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> DSA</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Data Science</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> NumPy</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Pandas</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Scipy</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">L<span class="list-item__head-learn">Learn</span> Matplotlib</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Statistics</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Excel</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Google Sheets</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mdt-list-middle">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">JavaScipt</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> JavaScipt</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> React</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> jQuery</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Vue</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> AngularJS</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> JSON</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> AJAX</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> AppML</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> W3.JS</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mdt-list-bottom">
+                                <div class="list-left-top">
+                                    <h3 class="list-left__header">Web Building</h3>
+                                    <ul class="list-left__list">
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Create a Website <span class="list-left__list--hot">HOT!</span></a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Create a Server <span class="list-left__list--new">NEW</span></a>
+
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Where To Start</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Web Template</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Web Statistics</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Web Certificates</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Web Development</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Code Editor</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Test Your Typing Speed</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Play a Code Game</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Cyber Sercurity</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Accessibility</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Join our Newsletter</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="close js-close">
+                                <i class="close__icon fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+
+                        <div class="mdt-list-right">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">Backend</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Python</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> SQL</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> MySQL</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> PHP</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Java</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> C</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> C++</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> C#</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> R</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Kotlin</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Go</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Django</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> PostgreSQL</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> TypeSript</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> ASP</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Node.js</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Raspberry Pi</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> Git</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> MongoDB</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> AWS Cloud</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head"><span class="list-item__head-learn">Learn</span> XML</a>
+                                        <a href="" class="list-item-link">Tutorial</a>
+                                        <a href="" class="list-item-link">Reference</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-exercises js-modal">
+                <div class="modal-tutorials__content">
+                    <header class="mdt-header">
+                        <h1 class="head">Exercises</h1>
+                        <div class="filter">
+                            <input type="text" class="filter__search" placeholder="Filter...">
+                            <i class="fiter__icon fa-solid fa-xmark"></i>
+                        </div>
+                    </header>
+                    <div class="mdt-course-list">
+                        <div class="mdt-list-left">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">HTML and CSS</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">HTML</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">CSS</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Bootstrap 3</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Bootstrap 4</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Bootstrap 5</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list-left-bottom">
+                                <h3 class="list-left__header">Data Analytics</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">DSA</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">NumPy</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Pandas</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">SciPy</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Excel</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="ex_and_quiz">
+                                <div class="ex_and_quiz__content">
+                                    <div class="ex">
+                                        <a href="" class="ex__link">What is an Exercies?</a>
+                                    </div>
+                                    <div class="quiz">
+                                        <a href="" class="quiz__link">What is a Quiz?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdt-list-middle">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">JavaScipt</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">JavaScipt</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">React</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">jQuery</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Vue</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="close js-close">
+                                <i class="close__icon fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+
+                        <div class="mdt-list-right">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">Backend</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Python</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">SQL</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">MySQL</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">PHP</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Java</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">C</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">C++</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">C#</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">R</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Kotlin</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Django</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">PostgreSQL</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">TypeSript</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Git</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Go</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">MongoDB</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">AWS Cloud</a>
+                                        <a href="" class="list-item-link">Exercise</a>
+                                        <a href="" class="list-item-link">Quiz</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-certificates js-modal">
+                <div class="modal-tutorials__content">
+                    <header class="mdt-header">
+                        <h1 class="head">Certificates</h1>
+                        <div class="filter">
+                            <input type="text" class="filter__search" placeholder="Filter...">
+                            <i class="fiter__icon fa-solid fa-xmark"></i>
+                        </div>
+                    </header>
+                    <div class="mdt-course-list">
+                        <div class="mdt-list-left">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">HTML and CSS</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">HTML</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">CSS</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Bootstrap 3</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Bootstrap 4</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Bootstrap 5</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list-left-bottom">
+                                <h3 class="list-left__header">Data Analytics</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">DSA</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Data Analytics</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">NumPy</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Pandas</a>
+                                            <a href="" class="list-item-link">Certificate</a>
+                                            <a href="" class="list-item-link">Course</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Excel</a>
+                                            <a href="" class="list-item-link">Certificate</a>
+                                        </li>
+                                        <li class="list-left__list-item">
+                                            <a href="" class="list-item__head">Social Media</a>
+                                            <a href="" class="list-item-link">Course</a>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="ex_and_quiz">
+                                <div class="ex_and_quiz__content">
+                                    <div class="ex">
+                                        <a href="" class="ex__link">What is a Certificate?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mdt-list-middle">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">JavaScipt</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">JavaScipt</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">React</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">jQuery</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Vue</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list-left-bottom">
+                                <h3 class="list-left__header">Programs</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Full Access <span class="list-left__list--new">Best Value!</span></a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Front End</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Web Dev.</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Web App</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Web Design</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="close js-close">
+                                <i class="close__icon fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+
+                        <div class="mdt-list-right">
+                            <div class="list-left-top">
+                                <h3 class="list-left__header">Backend</h3>
+                                <ul class="list-left__list">
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Python</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">SQL</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">MySQL</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">PHP</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Java</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">C</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">C++</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">C#</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">R</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Django</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">PostgreSQL</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">TypeSript</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">XML</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Cyber Sercurity</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Accessibility</a>
+                                        <a href="" class="list-item-link">Certificate</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">Python Apps on AWS</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                    <li class="list-left__list-item">
+                                        <a href="" class="list-item__head">AWS Traning</a>
+                                        <a href="" class="list-item-link">Course</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-services js-modal">
+                <div class="modal-tutorials__content">
+                    <header class="mdt-header">
+                        <h1 class="head">All Our Services</h1>
+                        <div class="filter">
+                            <input type="text" class="filter__search" placeholder="Filter...">
+                            <i class="fiter__icon fa-solid fa-xmark"></i>
+                        </div>
+                    </header>
+                    <div class="modal-services__note">
+                        <p class="modal-services__note-text">
+                            W3Schools offers a wide range of services and products for beginners and professionals,
+                            <br> helping millions of people everyday to learn and master new skills.
+                        </p>
+                    </div>
+                    <div class="close js-close">
+                        <i class="close__icon fa-solid fa-xmark"></i>
+                    </div>
+
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Free Tutorials</h4>
+                            <p class="row__text">Enjoy our free Tutorials like millions of other internet users since 1999</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">References</h4>
+                            <p class="row__text">Explore our selection of references covering all popular coding languages</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Create a Website</h4>
+                            <p class="row__text">Create your own website with
+                                <span class="row__text--bold">W3Schools</span> - no setup required
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Exercies</h4>
+                            <p class="row__text">Test your skills with different exercises</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Quizzes</h4>
+                            <p class="row__text">Test yourself with multiple choice questions</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Get Certified <i class="navbar_right-icon row__icon fa-solid fa-star"></i></h4>
+                            <p class="row__text">Document your knowledge</p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Log in / Sign Up</h4>
+                            <p class="row__text">Create a free W3Schools Account to Improve Your Learning Experience</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Pathfinder & My Learning</h4>
+                            <p class="row__text">Track your learning progress at W3Schools and collect rewards</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Upgrade <i class="navbar_right-icon row__icon fa-solid fa-star"></i></h4>
+                            <p class="row__text">Become a PLUS user and unlock powerful features (ad-free, hosting, support,..)</p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Where To Start</h4>
+                            <p class="row__text">Not sure where you want to start? Follow our guided path</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Code Editor (Try it)</h4>
+                            <p class="row__text">With our online code editor, you can edit code and view the result in your browser</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Videos <i class="navbar_right-icon row__icon fa-solid fa-star"></i></h4>
+                            <p class="row__text">Learn the basics of HTML in a fun and engaging video tutorial</p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Templates</h4>
+                            <p class="row__text">Not sure where you want to start? Follow our guided path</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Web Hosting</h4>
+                            <p class="row__text">Host your own website, and share it to the world with W3Schools Spaces!</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Create a Server <i class="navbar_right-icon row__icon fa-solid fa-star"></i></h4>
+                            <p class="row__text">Create your own server using Python, PHP, React.js, Node.js, Java, C#, etc.</p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">How To's</h4>
+                            <p class="row__text">Large collection of code snippets for HTML, CSS and JavaScript</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">CSS Framework</h4>
+                            <p class="row__text">Build fast and responsive sites using our free W3.CSS framework</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Browser Statistics</h4>
+                            <p class="row__text">Read long term trends of browser usage</p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Typing Speed</h4>
+                            <p class="row__text">Test your typing speed</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">AWS Training</h4>
+                            <p class="row__text">Learn Amazon Web Services</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Color Picker <img src="./assets/img/colorpicker_modal.png" alt="" class="row__img"></h4>
+                            <p class="row__text">Use our color picker to find different RGB, HEX and HSL colors.</p>
+
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Code Game <img src="./assets/img/lynxlogo_modal.svg" alt="" class="row__img"></h4>
+                            <p class="row__text">W3Schools Coding Game! Help the lynx collect pine cones</p>
+
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Set Goal</h4>
+                            <p class="row__text">Get personalized learning journey based on your current skills and goals</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Newsletter</h4>
+                            <p class="row__text">Join our newsletter and get access to exclusive content every month</p>
+                        </div>
+                    </div>
+                    <div class="modal-services__column">
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">For Teachers</h4>
+                            <p class="row__text">Contact us about W3Schools Academy for educational institutions</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">For Businesses</h4>
+                            <p class="row__text">Contact us about W3Schools Academy for your organization</p>
+                        </div>
+                        <div class="modal-services__row">
+                            <h4 class="row__heading">Contact Us</h4>
+                            <p class="row__text">About sales: sales@w3schools.com</p>
+                            <p class="row__text row__text-2">About errors: help@w3schools.com</p>
+                        </div>
+                    </div>
+
+                    <div class="modal-services__socials">
+                        <i class="modal-services__socials-icon fa-brands fa-youtube"></i>
+                        <i class="modal-services__socials-icon fa-brands fa-linkedin"></i>
+                        <i class="modal-services__socials-icon fa-brands fa-discord"></i>
+                        <i class="modal-services__socials-icon fa-brands fa-facebook"></i>
+                        <i class="modal-services__socials-icon fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    <script src="./assets/script/script.js"></script>
 </body>
+
+</html>
 
 </html>

@@ -19,3 +19,22 @@ html {
 body {
     margin: 0;
 }
+
+.open {
+    display: flex !important;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}

@@ -8,8 +8,10 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
+    /* position: absolute; */
     position: fixed;
     top: 0;
     left: 0;
@@ -22,6 +24,7 @@
     display: flex;
     align-items: center;
     z-index: 2;
+    position: relative;
 }
 
 .navbar__home {
@@ -36,8 +39,13 @@
 .navbar__selection {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.2rem;
-    padding: 16px;
+    font-size: 1.6rem;
+    padding: 20px 20px;
+}
+
+.navbar__selection:hover {
+    background-color: #04AA6D;
+    color: var(--white-color);
 }
 
 .navbar__selection-item {
@@ -60,7 +68,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px 8px;
+    padding: 10px 0px;
+    margin-left: 8px;
 }
 
 .navbar__search-icon {
@@ -131,7 +140,7 @@
 }
 
 .navbar_right-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-left: 4px;
 }
 
@@ -147,7 +156,7 @@
 }
 
 .navbar__acess-form {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     /* padding: 8px 16px; */
     text-decoration: none;
     display: flex;
@@ -185,8 +194,294 @@
 
 /* Header */
 
-.header {
-    height: 3000px;
-    background-color: black;
-    margin-top: 54px;
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 54px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.modal-services,
+.modal-certificates,
+.modal-tutorials,
+.modal-exercises {
+    width: 100%;
+    background-color: #282A34;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    display: none;
+}
+
+.modal-tutorials__content {
+    max-height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 950px;
+    padding: 0 16px;
+}
+
+.mdt-header {
+    display: flex;
+    align-items: center;
+}
+
+.head {
+    color: #FFF4A2;
+    font-size: 3.2rem;
+    width: 37%;
+}
+
+.filter {
+    background-color: #464645;
+    width: 314px;
+    height: 46px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.filter__search {
+    font-size: 1.6rem;
+    background-color: #464645;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+    padding-left: 22px;
+}
+
+.filter__search::placeholder {
+    font-style: italic;
+    color: var(--white-color);
+}
+
+.fiter__icon {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    padding: 15px 19px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-radius: 50%;
+}
+
+.fiter__icon:hover {
+    background-color: rgba(52, 52, 52, 0.5);
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.close:hover {
+    cursor: pointer;
+    background-color: #fbfbfb;
+    color: #000;
+}
+
+.close__icon {
+    font-size: 4rem;
+    color: var(--white-color);
+    padding: 16px;
+}
+
+.close__icon:hover {
+    color: #000;
+}
+
+.list-left-top {
+    margin-bottom: 52px;
+}
+
+.list-left__header {
+    color: #fdf4a1;
+    font-size: 2.4rem;
+    margin-bottom: 36px;
+}
+
+.list-left__list {
+    padding: 0;
+}
+
+.list-left__list-item {
+    list-style: none;
+    margin: 16px 0;
+}
+
+.list-item__head {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    padding: 2px 6px;
+    margin-bottom: 32px;
+}
+
+.list-item__head:hover {
+    background-color: #ccc;
+    color: var(--black-color);
+    border-radius: 4px;
+}
+
+.list-left__list-item a:first-child {
+    text-decoration: none;
+}
+
+.list-item-link {
+    font-size: 1.2rem;
+    color: #fdf4a1;
+    padding: 2px 6px;
+    margin-bottom: 20px;
+}
+
+.list-item-link:hover {
+    background-color: #059862;
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+.mdt-course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 8px;
+}
+
+.list-item__head-learn {
+    font-size: 1.5rem
+}
+
+.list-left__list--hot {
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    background-color: #d7242b;
+    border-radius: 25px;
+    border: 1px solid var(--black-color);
+}
+
+.list-left__list--new {
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    background-color: #00ab6b;
+    border-radius: 25px;
+    border: 1px solid var(--black-color);
+}
+
+.select {
+    background-color: #272b35;
+    color: var(--white-color);
+}
+
+.ex_and_quiz {
+    margin-top: 52px;
+}
+
+.ex_and_quiz__content {}
+
+.ex,
+.quiz {
+    height: 32px;
+    background-color: #20232b;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.ex__link,
+.quiz__link {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    padding: 4px 18px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.quiz__link {
+    padding: 4px 39px;
+}
+
+.modal-services__note {}
+
+.modal-services__note-text {
+    font-size: 1.7rem;
+    color: var(--white-color);
+    line-height: 3.2rem;
+    padding: 30px 13px 15px 13px;
+}
+
+.modal-services__column {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 16px;
+}
+
+.modal-services__row {
+    background-color: #3d404a;
+    width: 290px;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.row__heading {
+    font-size: 2rem;
+    color: #fdf5a5;
+    margin: 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row__text {
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin-bottom: 28px;
+}
+
+.row__text-2 {
+    margin-top: -20px;
+}
+
+.modal-services__socials {
+    padding: 100px 17px 20px;
+}
+
+.modal-services__socials-icon {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    padding: 0 16px;
+    margin-right: 10px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.modal-services__socials-icon:hover {
+    background-color: #fbfbfb;
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.row__img {
+    height: 35px;
+    transform: translateY(-18px);
 }

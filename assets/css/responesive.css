@@ -1,7 +1,46 @@
 /* Responesive in PC */
 
+@media (max-width: 64em) {}
 
-/* Responesive in Ipad */
+
+/* Responesive in Tablet and Mobile  */
+
+@media (max-width: 63.9375em) {}
+
+
+/* Responesive in Tablet */
+
+
+/* 46.25em && 63.9375em */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .navbar__service-list {
+        display: none;
+    }
+    .navbar__search {
+        height: auto;
+        width: auto;
+        border: none;
+    }
+    .navbar__search-input {
+        display: none;
+    }
+    .navbar__search-icon {
+        padding: 9px;
+    }
+    .navbar__selection {
+        padding: 20px 12px;
+    }
+}
 
 
 /* Responesive in Mobile */
+
+@media (max-width: 46.1875em) {
+    .navbar__search {
+        display: none;
+    }
+    .navbar__selection-text {
+        font-size: 1.2rem;
+    }
+}
