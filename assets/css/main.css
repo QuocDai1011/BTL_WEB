@@ -192,9 +192,6 @@
 }
 
 
-/* Header */
-
-
 /* Modal */
 
 .modal {
@@ -395,8 +392,6 @@
     margin-top: 52px;
 }
 
-.ex_and_quiz__content {}
-
 .ex,
 .quiz {
     height: 32px;
@@ -487,6 +482,9 @@
     transform: translateY(-18px);
 }
 
+
+/* Header */
+
 .header {
     margin-top: 56px;
     width: 100%;
@@ -501,6 +499,7 @@
     overflow-x: auto;
     white-space: nowrap;
     padding: 0 0px;
+    margin-bottom: 0;
 }
 
 .header__item:hover {
@@ -527,4 +526,88 @@
 .header::-webkit-scrollbar-thumb {
     background-color: #555;
     border-radius: 10px;
+}
+
+
+/* Content */
+
+.slide-1 {
+    background-image: url(../img/backGroundSlide1.webp), url(../img/backgroundslide1.2.webp);
+    background-repeat: no-repeat, repeat;
+    background-position: 90% 60%, center center;
+    /*left top*/
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.slide-1__content {
+    text-align: center;
+    max-width: 980px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin: auto;
+}
+
+.slide-1__heading {
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 106px;
+}
+
+.slide-1__text {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2.3rem;
+    color: #ffea8c;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+
+.slide-1__search {}
+
+.slide-1__search-input {
+    width: 48%;
+    height: 48px;
+    margin-right: -3px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 24px;
+    font-size: 1.7rem;
+    border: 1px solid #282A35;
+    border-right: 1px solid #04AA6D;
+    background-color: var(--white-color);
+}
+
+.slide-1__search-btn {
+    width: 12%;
+    height: 48px;
+    transform: translateY(0px);
+    border: none;
+    font-size: 1.7rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 42px;
+}
+
+.slide-1__search-btn:hover {
+    background-color: #059862;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.slide-1__search-icon {
+    color: var(--white-color);
+}
+
+.slide-1__link {
+    font-size: 2.4rem;
+    color: var(--white-color);
+}
+
+.slide-1__link:hover {
+    color: #ffea8c;
 }
