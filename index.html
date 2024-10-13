@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responesive.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>W3Schools Online Web Tutorials</title>
@@ -92,6 +93,7 @@
 
         <!-- HEADER -->
         <header class="header">
+            <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button>
             <ul class="header__list">
                 <li class="header__item">
                     <a href="" class="header__link">html</a>
@@ -214,6 +216,7 @@
                     <a href="" class="header__link">data science</a>
                 </li>
             </ul>
+            <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button>
         </header>
 
         <!-- CONTENT -->
@@ -233,27 +236,135 @@
 
             <!-- silde 2 -->
             <div class="slide-2">
+                <div class="slide-2__content-1">
+                    <header class="content-1__heading">HTML</header>
+                    <p class="content-1__text">The language for building web pages</p>
+                    <div class="content-1__link">
+                        <a href="" class="content-1__link-1">Learn HTML</a>
+                    </div>
+                    <div class="content-1__link"><a href="" class="content-1__link-2">Video Tutorial</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-3">HTML Reference</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-4">Get Certified</a></div>
 
+                </div>
+                <div class="slide-2__content-2">
+                    <header class="content-2__heading">HTML Example:</header>
+                    <div class="content-2__text">
+                        <pre><code>
+&lt;!DOCTYPE <span style="color: #e95a62;">html</span>&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;<span style="color: black;">HTML Tutorial</span>&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;<span style="color: black;">This is a heading</span>&lt;/h1&gt;
+    &lt;p&gt;<span style="color: black;">This is a paragraph.</span>&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </div>
+                    <button class="content-2__btn"><a href="" class="content-2__link">Try it Yourself</a></button>
+                </div>
             </div>
 
             <!-- silde 3 -->
             <div class="slide-3">
-
+                <div class="slide-3__content-1">
+                    <header class="content-1__heading">CSS</header>
+                    <p class="content-1__text">The language for styling web pages</p>
+                    <div class="content-1__link"><a href="" class="content-1__link-1">Learn CSS</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-3">CSS Reference</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-4">Get Certified</a></div>
+                </div>
+                <div class="slide-3__content-2">
+                    <header class="content-2__heading">CSS Example:</header>
+                    <div class="content-2__text">
+                        <pre><code>
+body {
+    <span style="color: red;">background-color</span>: <span style="color: blue;">lightblue</span>;
+}
+                              
+h1 {
+    <span style="color: red;">color</span>: <span style="color: blue;">white</span>;
+    <span style="color: red;">text-align</span>: <span style="color: blue;">center</span>;
+}
+                              
+p {
+    <span style="color: red;">font-family</span>: <span style="color: blue;">verdana</span>;
+}
+                        </code></pre>
+                    </div>
+                    <button class="content-2__btn"><a href="" class="content-2__link">Try it Yourself</a></button>
+                </div>
             </div>
 
             <!-- silde 4 -->
             <div class="slide-4">
-
+                <div class="slide-4__content-1">
+                    <header class="content-1__heading">JavaScipt</header>
+                    <p class="content-1__text">The language for programming web pages</p>
+                    <div class="content-1__link"><a href="" class="content-1__link-1">Learn JavaScipt</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-3">JavaScipt Reference</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-4">Get Certified</a></div>
+                </div>
+                <div class="slide-4__content-2">
+                    <header class="content-2__heading">JavaScipt Example:</header>
+                    <div class="content-2__text">
+                        <pre><code>
+&lt;button <span style="color: red;">onclick</span><span style="color: blue;">="myFunction()"</span>&gt;<span style="color: black;">Click Me!</span>&lt;/button&gt;
+<br>&lt;script&gt;
+<span style="color: blue;">function</span> <span style="color: black;">myFunction() {</span>
+&nbsp;&nbsp;let <span style="color: black;">x = document.getElementById(</span>"demo"<span style="color: black;">);</span>
+&nbsp;&nbsp;<span style="color: black;">x.style.fontSize =</span> "25px"<span style="color: black;">;</span>
+&nbsp;&nbsp;<span style="color: black;">x.style.color =</span> "red"<span style="color: black;">;</span>
+<span style="color: black;">}</span>
+&lt;/script&gt;
+                        </code></pre>
+                    </div>
+                    <button class="content-2__btn"><a href="" class="content-2__link">Try it Yourself</a></button>
+                </div>
             </div>
 
             <!-- silde 5 -->
             <div class="slide-5">
-
+                <div class="slide-5__content-1">
+                    <header class="content-1__heading">Python</header>
+                    <p class="content-1__text">A popular programming language</p>
+                    <div class="content-1__link"><a href="" class="content-1__link-1">Learn Pthon</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-3">python Reference</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-4">Get Certified</a></div>
+                </div>
+                <div class="slide-5__content-2">
+                    <header class="content-2__heading">Python Example:</header>
+                    <div class="content-2__text">
+                        <pre><code>
+<span style="color: blue;">if</span> <span style="color: red;">5</span> > <span style="color: red;">2</span>:
+    <span style="color: black;">print(</span>"Five is greater than two!"<span style="color: black;">)</span>
+                        </code></pre>
+                    </div>
+                    <button class="content-2__btn"><a href="" class="content-2__link">Try it Yourself</a></button>
+                </div>
             </div>
 
             <!-- silde 6 -->
             <div class="slide-6">
-
+                <div class="slide-6__content-1">
+                    <header class="content-1__heading">SQL</header>
+                    <p class="content-1__text">A language for accessing databases</p>
+                    <div class="content-1__link"><a href="" class="content-1__link-1">Learn SQL</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-3">SQL Reference</a></div>
+                    <div class="content-1__link"><a href="" class="content-1__link-4">Get Certified</a></div>
+                </div>
+                <div class="slide-6__content-2">
+                    <header class="content-2__heading">SQL Example:</header>
+                    <div class="content-2__text">
+                        <pre><code>
+<span style="color: blue;">SELECT</span> * <span style="color: blue;">FROM</span> Customers
+<span style="color: blue;">WHERE</span> Country=<span style="color: red;">'Mexico'</span>;
+                        </code></pre>
+                    </div>
+                    <button class="content-2__btn"><a href="" class="content-2__link">Try it Yourself</a></button>
+                </div>
             </div>
 
             <!-- silde 7 -->

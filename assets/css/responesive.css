@@ -5,7 +5,11 @@
 
 /* Responesive in Tablet and Mobile  */
 
-@media (max-width: 63.9375em) {}
+@media (max-width: 63.9375em) {
+    .scroll-btn {
+        display: none;
+    }
+}
 
 
 /* Responesive in Tablet */
@@ -31,12 +35,32 @@
     .navbar__selection {
         padding: 20px 12px;
     }
+    .slide-2__content-2,
+    .slide-3__content-2,
+    .slide-4__content-2,
+    .slide-5__content-2,
+    .slide-6__content-2 {
+        min-width: 90%;
+    }
+    .slide-2,
+    .slide-3,
+    .slide-4,
+    .slide-5,
+    .slide-6 {
+        padding: 24px;
+    }
 }
 
 
 /* Responesive in Mobile */
 
 @media (max-width: 46.1875em) {
+    .navbar__selection {
+        display: none;
+    }
+    .navbar__service-list {
+        display: none;
+    }
     .navbar__search {
         display: none;
     }
@@ -76,5 +100,19 @@
     }
     .slide-1__search-btn {
         width: 20%;
+    }
+    .slide-2__content-2,
+    .slide-3__content-2,
+    .slide-4__content-2,
+    .slide-5__content-2,
+    .slide-6__content-2 {
+        display: none;
+    }
+    .slide-2,
+    .slide-3,
+    .slide-4,
+    .slide-5,
+    .slide-6 {
+        padding: 16px;
     }
 }

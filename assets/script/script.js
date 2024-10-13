@@ -60,3 +60,46 @@ window.addEventListener('click', (event) => {
         modalsWrapper.classList.remove('open');
     }
 });
+
+//header js 
+
+$(document).ready(function() {
+    let scrollInterval; // Biến để lưu trạng thái cuộn liên tục
+
+    // Hàm bắt đầu cuộn trái
+    function startScrollLeft() {
+        scrollInterval = setInterval(function() {
+            $('.header__list').scrollLeft($('.header__list').scrollLeft() - 5);
+        }, 10); // Cuộn mỗi 10ms, bạn có thể điều chỉnh tốc độ cuộn bằng cách thay đổi giá trị này
+    }
+
+    // Hàm bắt đầu cuộn phải
+    function startScrollRight() {
+        scrollInterval = setInterval(function() {
+            $('.header__list').scrollLeft($('.header__list').scrollLeft() + 5);
+        }, 10); // Tương tự như cuộn trái
+    }
+
+    // Hàm dừng cuộn khi thả chuột
+    function stopScroll() {
+        clearInterval(scrollInterval); // Dừng việc cuộn
+    }
+
+    // Khi nhấn giữ chuột vào nút trái
+    $('.scroll-btn.left').mousedown(function() {
+        startScrollLeft();
+    }).mouseup(function() {
+        stopScroll();
+    }).mouseleave(function() {
+        stopScroll(); // Nếu chuột rời khỏi nút cuộn, cũng dừng cuộn
+    });
+
+    // Khi nhấn giữ chuột vào nút phải
+    $('.scroll-btn.right').mousedown(function() {
+        startScrollRight();
+    }).mouseup(function() {
+        stopScroll();
+    }).mouseleave(function() {
+        stopScroll();
+    });
+});

@@ -489,6 +489,8 @@
     margin-top: 56px;
     width: 100%;
     background-color: #282b35;
+    display: flex;
+    z-index: 2;
 }
 
 .header__list {
@@ -500,6 +502,16 @@
     white-space: nowrap;
     padding: 0 0px;
     margin-bottom: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+}
+
+.header__list::-webkit-scrollbar {
+    display: none;
+    /* Ẩn thanh cuộn trong trình duyệt WebKit (Chrome, Safari) */
 }
 
 .header__item:hover {
@@ -528,8 +540,23 @@
     border-radius: 10px;
 }
 
+.scroll-btn {
+    background-color: #292a35;
+    color: var(--white-color);
+    border: none;
+    padding: 0px 12px;
+}
+
+.scroll-btn:hover {
+    background: linear-gradient(to left, #000 95%, transparent 100%);
+    cursor: pointer;
+}
+
 
 /* Content */
+
+
+/* Slide 1 */
 
 .slide-1 {
     background-image: url(../img/backGroundSlide1.webp), url(../img/backgroundslide1.2.webp);
@@ -578,6 +605,7 @@
     border: 1px solid #282A35;
     border-right: 1px solid #04AA6D;
     background-color: var(--white-color);
+    outline: none;
 }
 
 .slide-1__search-btn {
@@ -610,4 +638,165 @@
 
 .slide-1__link:hover {
     color: #ffea8c;
+}
+
+
+/* Slide 2, 3, 4, 5, 6 */
+
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5,
+.slide-6 {
+    color: var(--black-color);
+    display: flex;
+    padding: 90px 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.slide-2 {
+    background-color: #d9eee1;
+}
+
+.slide-3 {
+    background-color: #fef4a1;
+}
+
+.slide-4 {
+    background-color: #282b35;
+}
+
+.slide-5 {
+    background-color: #f3ecea;
+}
+
+.slide-6 {
+    background-color: #95d4d3;
+}
+
+.slide-2__content-1,
+.slide-3__content-1,
+.slide-4__content-1,
+.slide-5__content-1,
+.slide-6__content-1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.content-1__heading {
+    font-size: 10rem;
+    color: var(--black-color);
+    line-height: 10rem;
+    font-weight: 700;
+}
+
+.slide-4__content-1 .content-1__heading {
+    font-size: 7rem;
+    color: var(--white-color);
+}
+
+.content-1__text {
+    font-size: 2rem;
+    margin: 24px 0;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+
+.slide-4__content-1 .content-1__text {
+    color: var(--white-color);
+}
+
+.content-1__link-1,
+.content-1__link-2,
+.content-1__link-3,
+.content-1__link-4 {
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 13px 16px;
+    display: block;
+    font-weight: 500;
+}
+
+.content-1__link {
+    width: 200px;
+    margin: 24px auto;
+}
+
+.content-1__link-1 {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 25px;
+}
+
+.content-1__link-2 {
+    color: var(--black-color);
+    background-color: #fef4a1;
+    border-radius: 25px;
+}
+
+.content-1__link-3 {
+    color: var(--white-color);
+    background-color: #282b35;
+    border-radius: 25px;
+}
+
+.slide-4__content-1 .content-1__link-3 {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.content-1__link-4 {
+    color: var(--black-color);
+    background-color: #ffc0c7;
+    border-radius: 25px;
+}
+
+.slide-2__content-2,
+.slide-3__content-2,
+.slide-4__content-2,
+.slide-5__content-2,
+.slide-6__content-2 {
+    background-color: #e7e9eb;
+    padding: 16px;
+    min-width: 30%;
+    box-shadow: 0 0 10px rgba(52, 52, 52, 0.5);
+    border-radius: 5px;
+    max-height: 464px;
+}
+
+.content-2__heading {
+    font-size: 2.4rem;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.content-2__text {
+    background-color: white;
+    padding: 0px 12px;
+    margin: 16px 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+pre {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #973148;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+.content-2__link {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    width: 200px;
+    text-decoration: none;
+    display: block;
+}
+
+.content-2__btn {
+    padding: 11px 16px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 25px;
 }
