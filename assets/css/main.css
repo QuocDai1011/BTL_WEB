@@ -1,89 +1,56 @@
+.slide{
+    font-family:'Source Sans Pro', sans-serif;
+}
+
 .slide--center{
     width:100%;
-    color: #fff;
+    color: var(--white-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.slide-11,.slide-13,.slide-15,slide-17{
-    background-color: var(--darkgrey-color);
-    font-family:'Source Sans Pro', sans-serif;
-}
 
-.slide-11 .slide{
-    padding-top: 91px;
-    padding-bottom: 96px;
+.slide__sub{
+    font-weight: 600;
 }
 
 .slide__content{
     text-align: center;
 }
+
 .slide__header{
     font-weight: 700;
 }
-.slide__header--11{
-    font-size: 5.2rem;
-    letter-spacing: -0.4px;
-    line-height: 55px;
+
+.slide-11 *,.slide-12 *,.slide-13 *,.slide-14 *,.slide-15 *,.slide-16 *,.slide-17 *,.slide-18 *,.footer *{
+    padding:0;
     margin: 0;
 }
-.slide__sub{
-    font-weight: 600;
-}
-.slide__sub--11 {
-    font-size: 2.5rem;
-    color: rgb(255, 192, 199);
-    line-height: 37.5px;
-    margin:19px 0;
+
+.slide-12{
+    color: #000;
+    background-color: var(--slide-12-color);
+    padding:80px 0 95px 0;
 }
 
-.slide-11 .slide__body{
-    margin-bottom: 50px;
-}
-
-.slide__items{
-    list-style-type: none;
-    font-size: 2rem;
-    line-height: 36px;
-    font-weight: 600;
-    text-decoration-style:solid;
-    display: inline-block;
-    margin: 0;
-}
-.slide__items--11{
-    padding-left: 85px;
-    margin-top:15px;
-}
-.slide__item .slide__item-icon{
-    margin-right: 15px;
-    display:inline-flex;
-    margin-bottom: -4.9px;
-}
-
-.slide__item-strong{
-    font-weight: 700;
-}
-
-.slide__btn {
+.slide-12 .slide{
     margin: 0 auto;
     text-align: center;
     display: block;
 }
-.slide__btn a{
-    display: block;
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--white-color);
+
+.slide-12 .slide__header--12{
+    font-size: 65px;
+    line-height: 97.5px;
+    margin-bottom: 5px;
 }
-.slide__btn:hover {
-    background-color:var(--greenhover-color);
-    cursor: pointer;
+
+.slide__sub--12{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 26px;
 }
-.slide__btn--learn-More {
-    width:300px;
-    height:52px;
-    border-radius: 25px;
-    line-height:52px ;
-    font-size: 2rem;
-    background-color: var(--greenhover-color);
+
+.slide-12 .slide__img--12:hover{
+    opacity: 0.6;
 }
