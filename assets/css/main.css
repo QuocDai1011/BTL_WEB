@@ -29,6 +29,10 @@
     font-weight: 700;
 }
 
+.item__strong{
+    font-weight: 700;
+}
+
 .slide__sub{
     font-weight: 600;
 }
@@ -68,7 +72,7 @@
 .slide__btn--play-Game{
     width: 200px;
     height: 52px;
-    background-color:var(--slide-grey-color) ;
+    background-color:#282A35 ;
     border-radius: 25px;
     line-height: 30px;
     padding:11px 0;
@@ -80,49 +84,6 @@
     background-color: var(--black-color);
 }
 
-.slide-15 .slide {
-    padding: 64px 20px;
-}
-
-.slide-15 .slide__header--15{
-    font-size: 65px;
-    line-height: 97.5px;
-    margin:10px 0;
-    color: var(--white-color);
-}
-
-.slide-15 .slide__sub--15{
-    line-height: 30px;
-    padding-bottom: 20px;
-    color: var(--white-color);
-    font-size: 20px;
-}
-
-.slide-15 .slide__body{
-    display: flex;
-    justify-content: center;
-    gap: 92px;
-}
-@media screen and (max-width: 603px) {
-    .slide-15 .slide__body{
-        flex-wrap: wrap;
-    }
-}
-
-.slide-15 .slide__btn {
-    width:100%;
-    max-width: 567.167px;
-    min-width: 300px;
-    height: auto;
-    text-align: center;
-    text-decoration: none;
-    font-family:'Source Sans Pro', sans-serif;
-    font-size: 35px;
-    display: inline-block;
-    margin:0;
-    margin-bottom: 18px;
-}
-
 .slide__btn--green{
     background-color:rgb(4, 170, 109) ;
     opacity:0.97;
@@ -130,30 +91,47 @@
     border-radius: 5px;
 }
 .slide__btn--green:hover{
-    background-color: var(--btn-hover-color);
+    background-color: var(--greenhover-color);
 }
-.slide-15 a{
-    line-height: 52.5px;
-    text-align: center;
-}
-.slide__btn--beige a{
-    color: #000;
-}
-.slide__btn--beige{
-    background-color:#FFF4A3;
-    opacity:0.97;
-    padding: 70px 50px;
-    border-radius: 5px;
+.slide-16{
+    background-color: rgb(231, 233, 235);
 }
 
-.slide__btn--beige:hover{
-    background-color: #fff080;
+.slide-16 .slide{
+    padding: 0 24px;
 }
 
-@media screen and (min-width: 678px) {
-    .slide-15 .slide__btn {
-      width: 45%;
-    }
-  }
+.slide__header--slide16{
+    font-size: 65px;
+    line-height: 97.5px;
+    color: var(--black-color);
+    padding-top:66px;
+}
+
+.slide__sub--slide16{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black-color);
+    margin: 10px 0 26px 0;
+}
+.slide__img--16{
+    width: 100%;
+}
+.slide__img--16 img{
+    width: 100%;
+    display: block;
+    margin:0 auto;
+    max-width: 980px;
+    min-width: 282px;
+}
+.slide-16 .slide__btn--play-Game a{
+    line-height: 62px;
+}
+.slide-16 .slide__btn--play-Game{
+    width: 50vw;
+    height: 62px;
+    padding:0;
+    margin:38px auto 108px auto;
+}
 
 
