@@ -63,67 +63,50 @@
     background-color:var(--btn-hover-color) ;
     cursor: pointer;
 }
-.slide__btn--learn-More {
-    width:300px;
-    height:52px;
-    border-radius: 25px;
-    line-height:52px ;
-    font-size: 20px;
-    background-color: var(--btn-color);
-}
 
-.slide-13{
-    align-items: center;
-    padding: 32px 35px ;
+.slide-14{
+    background-color: var(--slide-14-color);
 }
-.slide-13 .slide__body{
-    display:flex;
-    justify-content: center;
- }
-
-.slide-13 .slide__text{
-    padding: clamp(9px, 3vw, 29.391px);
+.slide-14 .slide{
+    text-align: center;
+    padding: 3%;
+    margin:40px 0;
 }
-
-.slide-13 .slide__header--13{
-    font-size: 70px;
-    line-height: 55px;
-    padding-top:13px;
-    margin-left: 20.924px;
-    margin-right: 20.924px;
+.slide-14 .slide__content{
+    color:var(--black-color);
 }
-
-.slide__sub--13{
-    font-size: 19px;
-    line-height: 28.5px;
-    margin:42.8px 0 37.8px 0;
-}
-.slide__items--13{
-    padding-left: 79px;
+.slide-14 .slide__sub--14{
+    font-family: 'Freckle Face', cursive;
+    font-size: 32px;
+    font-weight: 400;
     margin-bottom: 35px;
+    margin-top: 10px;
+}
+.slide-14 .slide__header--14{
+    font-family: 'Freckle Face', cursive;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+    margin-top:2px;
 }
 
+.img--slide14:hover {
+    opacity: 0.6;
+}
 
-.slide13__img{
-    margin: clamp(9px, 3vw, 29.391px);
-    max-width:500px;
-    min-width: 282px;
-}
-.slide__img--class-room{
-    width:100%;
-    height: auto;
-    margin-top:16px;
-}
-.slide-13 .slide__btn--learn-More{
+.slide__btn--play-Game{
     width: 200px;
-    height: 43px;
-    font-size: 18px;
-    line-height: 43px;
+    height: 52px;
+    background-color:var(--slide-grey-color) ;
+    border-radius: 25px;
+    line-height: 30px;
+    padding:11px 0;
+    margin-top:31px;
+    margin-bottom: 18px;
+    font-size: 20px;
 }
-@media screen and (max-width: 992px) {
-    .slide-13 .slide__body{
-        flex-wrap: wrap;
-    }
+.slide__btn--play-Game:hover{
+    background-color: var(--black-color);
 }
 
 
