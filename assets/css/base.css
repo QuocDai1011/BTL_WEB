@@ -2,9 +2,11 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --darkgrey-color:#282A35;
-    --green-color:rgb(4, 170, 109);
-    --greenhover-color:#059862 ;
+    --slide-grey-color:#282A35;
+    --btn-color:#04AA6D;
+    --btn-hover-color:#059862 ;
+    --slide-12-color:rgb(243, 236, 234);
+    --slide-14-color:rgb(150, 212, 212);
 }
 
 * {
@@ -12,12 +14,11 @@
 }
 
 html {
-    font-size: 62, 5%;
+    font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
-body {
+body{
     margin: 0;
 }
