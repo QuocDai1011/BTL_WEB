@@ -1,12 +1,124 @@
 .slide--center {
     width: 100%;
     color: #fff;
+}
+
+.slide--center {
+    width: 100%;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.slide-11,
+.slide-13,
+.slide-15,
+slide-17 {
+    background-color: var(--slide-grey-color);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.slide-11 .slide {
+    padding-top: 91px;
+    padding-bottom: 96px;
+}
+
+.slide__content {
+    text-align: center;
+}
+
+.slide__header {
+    font-weight: 700;
+}
+
+.slide__header--11 {
+    font-size: 5.2rem;
+    letter-spacing: -0.4px;
+    line-height: 55px;
+    margin: 0;
+}
+
+.slide__sub {
+    font-weight: 600;
+}
+
+.slide__sub--11 {
+    font-size: 2.5rem;
+    color: rgb(255, 192, 199);
+    line-height: 37.5px;
+    margin: 19px 0;
+}
+
+.slide-11 .slide__body {
+    margin-bottom: 50px;
+}
+
+.slide__items {
+    list-style-type: none;
+    font-size: 2rem;
+    line-height: 36px;
+    font-weight: 600;
+    text-decoration-style: solid;
+    display: inline-block;
+    margin: 0;
+}
+
+.slide__items--11 {
+    padding-left: 85px;
+    margin-top: 15px;
+}
+
+.slide__item .slide__item-icon {
+    margin-right: 15px;
+    display: inline-flex;
+    margin-bottom: -4.9px;
+}
+
+.slide__item-strong {
+    font-weight: 700;
+}
+
+.slide__btn {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.slide__btn a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.slide__btn:hover {
+    background-color: var(--btn-hover-color);
+    cursor: pointer;
+}
+
+.slide__btn--learn-More {
+    width: 300px;
+    height: 52px;
+    border-radius: 25px;
+    line-height: 52px;
+    font-size: 2rem;
+    background-color: var(--btn-color);
+}
+
 .slide {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.slide--center {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+HEAD .slide {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -114,9 +226,41 @@
     margin-bottom: 50px;
 }
 
+.slide-11 *,
+.slide-12 *,
+.slide-13 *,
+.slide-14 *,
+.slide-15 *,
+.slide-16 *,
+.slide-17 *,
+.slide-18 *,
+.footer * {
+    padding: 0;
+    margin: 0;
+}
+
+.slide-11,
+.slide-13,
+.slide-15,
+.slide-17 {
+    background-color: var(--slide-grey-color);
+}
+
+.slide__content {
+    text-align: center;
+}
+
+.slide__header {
+    font-weight: 700;
+}
+
+.slide__sub {
+    font-weight: 600;
+}
+
 .slide__items {
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 36px;
     font-weight: 600;
     text-decoration-style: solid;
@@ -139,6 +283,12 @@
     font-weight: 700;
 }
 
+.slide__item .slide__item-icon {
+    margin-right: 15px !important;
+    display: inline-flex;
+    margin-bottom: -4.9px;
+}
+
 .slide__btn {
     margin: 0 auto;
     text-align: center;
@@ -153,6 +303,7 @@
 }
 
 .slide__btn:hover {
+    background-color: var(--btn-hover-color);
     background-color: var(--btn-hover-color);
     cursor: pointer;
 }
@@ -968,4 +1119,58 @@ pre {
     background-color: var(--primary-color);
     border: none;
     border-radius: 25px;
+}
+
+line-height:52px;
+font-size: 20px;
+background-color: var(--btn-color);
+
+}
+.slide-13 {
+    align-items: center;
+    padding: 32px 35px;
+}
+.slide-13 .slide__body {
+    display: flex;
+    justify-content: center;
+}
+.slide-13 .slide__text {
+    padding: clamp(9px, 3vw, 29.391px);
+}
+.slide-13 .slide__header--13 {
+    font-size: 70px;
+    line-height: 55px;
+    padding-top: 13px;
+    margin-left: 20.924px;
+    margin-right: 20.924px;
+}
+.slide__sub--13 {
+    font-size: 19px;
+    line-height: 28.5px;
+    margin: 42.8px 0 37.8px 0;
+}
+.slide__items--13 {
+    padding-left: 79px;
+    margin-bottom: 35px;
+}
+.slide13__img {
+    margin: clamp(9px, 3vw, 29.391px);
+    max-width: 500px;
+    min-width: 282px;
+}
+.slide__img--class-room {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+}
+.slide-13 .slide__btn--learn-More {
+    width: 200px;
+    height: 43px;
+    font-size: 18px;
+    line-height: 43px;
+}
+@media screen and (max-width: 992px) {
+    .slide-13 .slide__body {
+        flex-wrap: wrap;
+    }
 }
