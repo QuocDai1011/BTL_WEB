@@ -6,7 +6,7 @@
     align-items: center;
 }
 .slide-11,.slide-13,.slide-15,slide-17{
-    background-color: var(--darkgrey-color);
+    background-color: var(--slide-grey-color);
     font-family:'Source Sans Pro', sans-serif;
 }
 
@@ -76,7 +76,7 @@
     color: var(--white-color);
 }
 .slide__btn:hover {
-    background-color:var(--greenhover-color);
+    background-color:var(--btn-hover-color);
     cursor: pointer;
 }
 .slide__btn--learn-More {
@@ -85,5 +85,5 @@
     border-radius: 25px;
     line-height:52px ;
     font-size: 2rem;
-    background-color: var(--greenhover-color);
+    background-color: var(--btn-color);
 }
