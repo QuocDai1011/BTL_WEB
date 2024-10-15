@@ -57,12 +57,14 @@
     text-align: center;
     display: block;
 }
+
 .slide__btn a{
     display: block;
     text-decoration: none;
     font-weight: 600;
     color: var(--white-color);
 }
+
 .slide__btn:hover {
     background-color:var(--btn-hover-color) ;
     cursor: pointer;
@@ -76,6 +78,7 @@
     font-size: 20px;
     background-color: var(--btn-color);
 }
+
 .slide__btn--play-Game{
     width: 200px;
     height: 52px;
@@ -87,6 +90,7 @@
     margin-bottom: 18px;
     font-size: 20px;
 }
+
 .slide__btn--play-Game:hover{
     background-color: var(--black-color);
 }
@@ -97,6 +101,7 @@
     padding: 70px 50px;
     border-radius: 5px;
 }
+
 .slide__btn--green:hover{
     background-color: var(--btn-hover-color);
 }
@@ -127,6 +132,7 @@
 .slide__img--16{
     width: 100%;
 }
+
 .slide__img--16 img{
     width: 100%;
     display: block;
@@ -134,9 +140,11 @@
     max-width: 980px;
     min-width: 282px;
 }
+
 .slide-16 .slide__btn--play-Game a{
     line-height: 62px;
 }
+
 .slide-16 .slide__btn--play-Game{
     width: 50vw;
     height: 62px;
@@ -192,18 +200,23 @@
 .slide__circle-logo-1{
     fill:#04aa6b;
 }
+
 .slide__circle-logo-2{
     font-size:23px;
 }
+
 .slide__circle-logo-2,.slide__circle-logo-3,.slide__circle-logo-4{
     fill:#fff;
 }
+
 .slide__circle-logo-2,.slide__circle-logo-3{
     font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;
 }
+
 .slide__circle-logo-3{
     font-size:20.08px;
 }
+
 #slide__arrow,
 #slide__circle-logo {
     position: absolute;
@@ -226,23 +239,6 @@
     width: 220px;
     height: auto;
 }
-cls-1{
-    background-color:#04aa6b;
-}
-.cls-2{
-    font-size:23px;
-}
-.cls-2,.cls-3,.cls-4{
-    fill:var(--white-color);
-}
-.cls-2,.cls-3{
-    font-family:RobotoMono-Medium, Roboto Mono;
-    font-weight:500;
-}
-.cls-3{
-    font-size:20.08px;
-}
-
 
 @media screen and (max-width: 992px) {
     #slide__arrow {
@@ -584,6 +580,7 @@ cls-1{
     width: auto;
     float:left;
 }
+
 .footer__link-1 a,
 .footer__header-logo a{
     text-decoration: none;
@@ -591,6 +588,7 @@ cls-1{
     line-height: 22.5px;
     font-size: 15px;
 }
+
 .footer__link-4:hover,
 .footer__size-15:hover,
 .footer__link-1:hover a,
@@ -598,13 +596,16 @@ cls-1{
     text-decoration:underline;
     color: #FFF4A3;
 }
+
 .footer__link-1{
     padding:40px 30px;
 }
+
 .footer__break{
     margin:0;
     display: inline;
 }
+
 .footer__body{
     overflow: hidden;
     display: flex;
@@ -615,18 +616,23 @@ cls-1{
     font-size: 18px;
     margin: 10px 0 20px 0;
 }
+
 .footer__link-2{
     display:block;
 }
+
 .footer__link-2:hover,
-.footer__size-20:hover{
+.footer__size-20:hover,
+.footer__Top-4 .footer__title:hover{
     text-decoration:underline;
     color: #FFF4A3;
     text-decoration: none;
 }
+
 .footer__size-15{
     font-size: 15px;
 }
+
 .footer__Top{
     float:left;
     width: auto;
@@ -635,21 +641,26 @@ cls-1{
 .footer__Top-4{
     padding-right: 0;
 }
+
 .footer__icon{
     display: block;
     font-size: 20px;
     padding:60px 40px 10px;
 }
+
 .footer__link-3{
     margin-right: 10px;
 }
+
 .footer__a{
     color:rgb(221, 221, 221);
     text-decoration: none;
 }
+
 .footer__footer{
     padding-left: 40px;
 }
+
 .footer__link-4{
     color: rgb(221, 221, 221);
 }
