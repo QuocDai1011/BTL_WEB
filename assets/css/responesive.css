@@ -119,4 +119,13 @@
     .slide-6 {
         padding: 16px;
     }
+    .slide__header--17 {
+        font-size: 5.2rem;
+    }
+    .slide__sub.slide__sub--17 {
+        font-size: 4rem;
+    }
+    .slide-14 .slide__sub--14 {
+        line-height: 1.6;
+    }
 }
