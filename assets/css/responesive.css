@@ -1,6 +1,10 @@
 /* Responesive in PC */
 
-@media (max-width: 64em) {}
+@media (max-width: 64em) {
+    .footer__box-icon-2 {
+        justify-content: center;
+    }
+}
 
 
 /* Responesive in Tablet and Mobile  */
