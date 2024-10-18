@@ -41,6 +41,7 @@
 
 .slide__sub {
     font-weight: 600;
+    margin-bottom: 16px !important;
 }
 
 .slide__sub--11 {
@@ -104,6 +105,7 @@
     line-height: 52px;
     font-size: 2rem;
     background-color: var(--btn-color);
+    margin-top: 32px !important;
 }
 
 .slide {
@@ -128,10 +130,6 @@ HEAD .slide {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.slide__sub {
-    font-weight: 600;
 }
 
 .slide__content {
@@ -211,10 +209,6 @@ HEAD .slide {
     margin: 0;
 }
 
-.slide__sub {
-    font-weight: 600;
-}
-
 .slide__sub--11 {
     font-size: 2.5rem;
     color: rgb(255, 192, 199);
@@ -258,10 +252,6 @@ HEAD .slide {
     font-weight: 700;
 }
 
-.slide__sub {
-    font-weight: 600;
-}
-
 .slide__items {
     list-style-type: none;
     font-size: 20px;
@@ -299,26 +289,10 @@ HEAD .slide {
     display: block;
 }
 
-.slide__btn a {
-    display: block;
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--white-color);
-}
-
 .slide__btn:hover {
     background-color: var(--btn-hover-color);
     background-color: var(--btn-hover-color);
     cursor: pointer;
-}
-
-.slide__btn--learn-More {
-    width: 300px;
-    height: 52px;
-    border-radius: 25px;
-    line-height: 52px;
-    font-size: 2rem;
-    background-color: var(--btn-color);
 }
 
 .slide-14 {
@@ -823,6 +797,10 @@ HEAD .slide {
     background-color: #282b35;
     display: flex;
     z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header__list {
@@ -1059,6 +1037,22 @@ HEAD .slide {
     font-weight: 500;
 }
 
+.content-1__link-1:hover {
+    background-color: #059862;
+}
+
+.content-1__link-2:hover {
+    background-color: #fff080;
+}
+
+.content-1__link-3:hover {
+    background-color: #000;
+}
+
+.content-1__link-4:hover {
+    background-color: #ffb3bb;
+}
+
 .content-1__link {
     width: 200px;
     margin: 24px auto;
@@ -1140,6 +1134,11 @@ pre {
     background-color: var(--primary-color);
     border: none;
     border-radius: 25px;
+}
+
+.content-2__btn:hover {
+    background-color: #059862;
+    cursor: pointer;
 }
 
 
@@ -1648,6 +1647,7 @@ background-color: var(--btn-color); */
 
 .slide-18 .slide__turn:hover {
     background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
 .slide-18 #slide__turn-Left {

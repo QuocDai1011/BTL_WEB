@@ -48,3 +48,7 @@ body {
 .modal.open {
     display: block !important;
 }
+
+.mt-16 a {
+    margin-top: 16px !important;
+}
