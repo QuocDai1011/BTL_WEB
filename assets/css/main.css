@@ -884,6 +884,7 @@ HEAD .slide {
     /*left top*/
     padding-top: 90px;
     padding-bottom: 90px;
+    margin-top: 88px;
 }
 
 .slide-1__content {
