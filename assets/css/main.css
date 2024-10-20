@@ -337,6 +337,10 @@ HEAD .slide {
     padding: 3px 19px;
 }
 
+.navbar__home:hover {
+    background-color: #e7e4e4;
+}
+
 .navbar__home-img {
     height: 36px;
     margin-top: 8px;
@@ -714,9 +718,10 @@ HEAD .slide {
 .quiz__link {
     font-size: 1.8rem;
     color: var(--white-color);
-    padding: 4px 18px;
+    /* padding: 5px 19px; */
     text-decoration: none;
     font-weight: 400;
+    border-radius: 4px
 }
 
 .quiz__link {
@@ -792,6 +797,25 @@ HEAD .slide {
 .modal-services__row--hover:hover {
     background-color: #000;
     cursor: pointer;
+}
+
+.ex_quiz--hover:hover .ex__link,
+.ex_quiz--hover:hover .quiz__link {
+    color: var(--black-color) !important;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.ex__link-certificates--padding {
+    padding: 5px 29px;
+}
+
+.ex__link-exercises--padding {
+    padding: 5px 19.5px;
+}
+
+.quiz__link-exercises--padding {
+    padding: 5px 40px;
 }
 
 
