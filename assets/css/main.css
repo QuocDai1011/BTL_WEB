@@ -1890,10 +1890,11 @@ background-color: var(--btn-color); */
 
 .footer__link-4:hover,
 .footer__size-15:hover,
-.footer__link-1:hover a,
-.footer__header-logo:hover a {
+.footer__link-1 a:hover,
+.footer__header-logo a:hover {
     text-decoration: underline;
     color: #FFF4A3;
+    cursor: pointer;
 }
 
 .footer__link-1 {
@@ -1943,13 +1944,16 @@ background-color: var(--btn-color); */
 }
 
 .footer__icon {
-    display: block;
+    display: flex;
     font-size: 20px;
     padding: 60px 40px 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 16px;
 }
 
 .footer__link-3 {
-    margin-right: 10px;
+    margin-right: 16px;
 }
 
 .footer__a {
@@ -1967,7 +1971,7 @@ background-color: var(--btn-color); */
 
 .footer__box-icon-1 {
     display: flex;
-    margin-bottom: 16px;
+    margin-right: 16px;
 }
 
 .footer__box-icon-2 {
