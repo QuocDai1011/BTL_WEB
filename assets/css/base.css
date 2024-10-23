@@ -47,8 +47,22 @@ body {
 
 .modal.open {
     display: block !important;
+    /* overflow: hidden; */
 }
 
 .mt-16 a {
     margin-top: 16px !important;
+}
+
+.modal-tutorials__content {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Đối với Firefox */
+    scroll-behavior: smooth;
+    /* Cuộn mượt */
+}
+
+.modal-tutorials__content::-webkit-scrollbar {
+    display: none;
+    /* Ẩn thanh cuộn trong Chrome, Safari và Edge */
 }

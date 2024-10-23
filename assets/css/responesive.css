@@ -53,6 +53,39 @@
     .slide-6 {
         padding: 24px;
     }
+    .program-a .container1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 32px 0;
+        max-width: 88%;
+    }
+    .container3 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px 0;
+        max-width: 88%;
+    }
+    .program-b img {
+        max-width: 98%;
+    }
+    .button1.program-b {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 6px;
+    }
+    .buttonbe {
+        padding: 16px;
+    }
+    .program-b {
+        padding: 32px 0;
+    }
+    .program-c img {
+        max-width: 94%;
+    }
+    .learn-more-button {
+        padding: 17px 103px;
+        font-size: 2.1rem;
+    }
 }
 
 
@@ -128,4 +161,5 @@
     .slide-14 .slide__sub--14 {
         line-height: 1.6;
     }
+    /*  */
 }
