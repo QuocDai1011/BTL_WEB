@@ -154,3 +154,7 @@ circleColors.forEach(circleColor => {
 
 turnLeft.addEventListener('click', left);
 turnRight.addEventListener('click', right);
+
+window.addEventListener('scroll', function() {
+    document.getElementById('myElement').style.top = window.scrollY + 'px';
+});
