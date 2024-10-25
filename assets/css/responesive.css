@@ -13,6 +13,9 @@
     .scroll-btn {
         display: none;
     }
+    .footer__icon {
+        justify-content: center;
+    }
 }
 
 
@@ -64,7 +67,7 @@
         max-width: 88%;
     }
     .program-b img {
-        max-width: 98%;
+        max-width: 94%;
     }
     .button1.program-b {
         display: flex;
@@ -85,6 +88,13 @@
     .learn-more-button {
         padding: 17px 103px;
         font-size: 2.1rem;
+    }
+    .program-a .container2 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+    }
+    .modal-services__row {
+        width: 212px;
     }
 }
 
@@ -240,4 +250,10 @@
         /* padding: 10px !important; */
     }
     /*  */
+    .navbar {
+        padding-right: 0;
+    }
+    .footer__box-icon-1 a {
+        margin-right: 32px;
+    }
 }

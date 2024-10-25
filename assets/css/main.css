@@ -328,37 +328,28 @@ HEAD .slide {
 }
 
 .content {
+    margin-top: -2px;
     width: 100%;
+}
+
+#test {
+    position: fixed;
 }
 
 .navbar {
     margin: 0;
-    padding: 0;
+    /* padding-right: 16px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     /* position: absolute; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* right: 0; */
-    z-index: 1000000;
-    background-color: var(--white-color);
-    height: 54px;
-}
-
-.navbar--fixed {
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
+    z-index: 1000000;
     background-color: var(--white-color);
-    justify-content: space-between;
-    -webkit-backface-visibility: hidden;
-    will-change: transform;
-    transform: translateZ(0);
+    height: 54px;
 }
 
 .navbar-body-left {
@@ -559,6 +550,11 @@ HEAD .slide {
     padding-top: 34px;
     padding-bottom: 34px;
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .modal-tutorials__content {
@@ -774,7 +770,7 @@ HEAD .slide {
 
 .modal-services__column {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 8px 12px;
 }
 
@@ -788,7 +784,7 @@ HEAD .slide {
 .row__heading {
     font-size: 2rem;
     color: #fdf5a5;
-    margin: 28px 0;
+    margin: 28px 8px;
     display: flex;
     justify-content: space-between;
 }
@@ -2390,18 +2386,19 @@ background-color: var(--btn-color); */
 
 .footer__icon {
     display: flex;
-    font-size: 20px;
-    padding: 60px 40px 10px;
+    /* font-size: 20px; */
+    padding: 20px;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 16px;
+    /* justify-content: center; */
 }
 
 .footer__link-3 {
     margin-right: 16px;
     display: block;
-    font-size: 20px;
-    padding: 60px 40px 10px;
+    font-size: 2rem;
+    padding: 20px;
 }
 
 .footer__link-3 {
@@ -2423,15 +2420,9 @@ background-color: var(--btn-color); */
 
 .footer__box-icon-1 {
     display: flex;
-    margin-right: 16px;
-    margin-bottom: 16px;
 }
 
 .footer__box-icon-2 {
     display: flex;
     flex-wrap: wrap;
-}
-
-flex-wrap: wrap;
-
 }
