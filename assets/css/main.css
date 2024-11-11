@@ -1449,7 +1449,8 @@ h1.program-B {
     font-weight: bold;
     padding-top: 20px;
     text-align: center;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    line-height: 1.3;
 }
 
 p.program-B {
@@ -1575,22 +1576,24 @@ a.program-c:hover {
 
 .content-wrapper.d {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .image.pro-d {
     /* width: 50%; */
-    max-width: 500px;
+    max-width: 50%;
 }
 
 .container.d {
-    /* width: 50%; */
+    width: 50%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     padding-right: 20px;
     text-align: center;
@@ -1601,6 +1604,7 @@ h1.d {
     font-size: 6.5rem;
     font-weight: bold;
     margin-bottom: 50px;
+    line-height: 1.3;
 }
 
 p.d {
