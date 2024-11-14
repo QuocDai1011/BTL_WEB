@@ -32,6 +32,7 @@ function toggleModal(index) {
     }
 }
 
+
 // Lắng nghe sự kiện nhấp chuột vào các nút để mở modal
 modals.forEach((modal, index) => {
     modal.addEventListener('click', () => {
@@ -102,7 +103,15 @@ $(document).ready(function() {
     }).mouseleave(function() {
         stopScroll();
     });
+
+    // dark mode
+
+    $('.js-darkMode-btn').click(function() {
+        $('.js-nav-darkMode').toggleClass('dark-mode');
+        $('.js-selec-darkMode').toggleClass('dark-mode');
+    })
 });
+
 
 const images = [
     './assets/img/slide18-captionText.jpg',
@@ -131,6 +140,7 @@ function pageUpdate() {
     })
 }
 
+
 function left() {
     currentPage = (currentPage - 1 + images.length) % images.length;
     pageUpdate();
@@ -158,3 +168,9 @@ turnRight.addEventListener('click', right);
 window.addEventListener('scroll', function() {
     document.getElementById('myElement').style.top = window.scrollY + 'px';
 });
+
+const darkModeBtn = document.querySelector('.js-darkMode-btn');
+darkModeBtn.addEventListener('click', function() {
+    
+});
+

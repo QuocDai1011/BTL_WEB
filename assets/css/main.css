@@ -354,6 +354,8 @@ HEAD .slide {
     right: 0;
     z-index: 1000000;
     background-color: var(--white-color);
+    /* background-color: #1d2a35; */
+    /* color: #000; */
     height: 54px;
 }
 
@@ -411,6 +413,7 @@ HEAD .slide {
     justify-content: flex-end;
     padding: 10px 0px;
     margin-left: 8px;
+    background-color: white;
 }
 
 .navbar__search-icon {
@@ -2471,4 +2474,9 @@ background-color: var(--btn-color); */
 
 .split {
     margin-bottom: -8px;
+}
+
+.dark-mode {
+    background-color: #1d2a35 !important;
+    color: white !important;
 }
