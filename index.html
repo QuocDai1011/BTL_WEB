@@ -55,32 +55,32 @@
 
                 <div class="navbar__search">
                     <input type="text" class="navbar__search-input" placeholder="Search...">
-                    <i class="navbar__search-icon fa-solid fa-magnifying-glass"></i>
+                    <i class="navbar__search-icon fa-solid fa-magnifying-glass js-search-darkmode"></i>
                 </div>
 
-                <div class="navbar__dark-mode ">
-                    <i class="navbar__dark-mode-icon fa-solid fa-circle-half-stroke js-darkMode-btn"></i>
+                <div class="navbar__dark-mode">
+                    <i class="navbar__dark-mode-icon fa-solid fa-circle-half-stroke js-darkMode-btn js-darkMode-btn--hover"></i>
                 </div>
             </div>
 
             <div class="navbar-body-right">
                 <div class="navbar__service-list">
-                    <a style="text-decoration: none; color: black   ;" href="https://quocdai1011.github.io/BTL_WEB_W3S_PLUS/" class="navbar__service js-selec-darkMode">
+                    <a style="text-decoration: none; color: black;" href="https://quocdai1011.github.io/BTL_WEB_W3S_PLUS/" class="navbar__service js-selec-darkMode">
                         <i class="navbar_right-icon fa-solid fa-star"></i>
                         <p class="navbar_right-text">Plus</p>
                     </a>
 
-                    <div class="navbar__service">
+                    <div class="navbar__service js-selec-darkMode">
                         <i class="navbar_right-icon fa-solid fa-graduation-cap"></i>
                         <p class="navbar_right-text">For Teachers</p>
                     </div>
 
-                    <div class="navbar__service">
+                    <div class="navbar__service js-selec-darkMode">
                         <i class="navbar_right-icon fa-solid fa-code"></i>
                         <p class="navbar_right-text">Spaces</p>
                     </div>
 
-                    <div class="navbar__service">
+                    <div class="navbar__service js-selec-darkMode">
                         <i class="navbar_right-icon fa-solid fa-cart-shopping"></i>
                         <p class="navbar_right-text">Get Certified</p>
                     </div>
@@ -241,6 +241,7 @@
             <svg class="split" style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
                 <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
             </svg>
+
             <!-- silde 2 -->
             <div class="slide-2">
                 <div class="slide-2__content-1">
@@ -254,18 +255,18 @@
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-4">Get Certified</a></div>
 
                 </div>
-                <div class="slide-2__content-2">
+                <div class="slide-2__content-2 js-darkMode-content">
                     <header class="content-2__heading">HTML Example:</header>
-                    <div class="content-2__text">
+                    <div class="content-2__text js-nav-darkMode">
                         <pre><code>
 &lt;!DOCTYPE <span style="color: #e95a62;">html</span>&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;<span style="color: black;">HTML Tutorial</span>&lt;/title&gt;
+    &lt;title&gt;<span style="color: black;" class="js-darkMode-span">HTML Tutorial</span>&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;h1&gt;<span style="color: black;">This is a heading</span>&lt;/h1&gt;
-    &lt;p&gt;<span style="color: black;">This is a paragraph.</span>&lt;/p&gt;
+    &lt;h1&gt;<span style="color: black;" class="js-darkMode-span">This is a heading</span>&lt;/h1&gt;
+    &lt;p&gt;<span style="color: black;" class="js-darkMode-span">This is a paragraph.</span>&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
                         </code></pre>
@@ -283,21 +284,21 @@
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-3">CSS Reference</a></div>
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-4">Get Certified</a></div>
                 </div>
-                <div class="slide-3__content-2">
+                <div class="slide-3__content-2 js-darkMode-content">
                     <header class="content-2__heading">CSS Example:</header>
-                    <div class="content-2__text">
+                    <div class="content-2__text js-nav-darkMode">
                         <pre><code>
 body {
-    <span style="color: red;">background-color</span>: <span style="color: blue;">lightblue</span>;
+    <span style="color: red;">background-color</span>: <span style="color: blue;" class="js-darkMode-span">lightblue</span>;
 }
                               
 h1 {
-    <span style="color: red;">color</span>: <span style="color: blue;">white</span>;
-    <span style="color: red;">text-align</span>: <span style="color: blue;">center</span>;
+    <span style="color: red;">color</span>: <span style="color: blue;" class="js-darkMode-span">white</span>;
+    <span style="color: red;">text-align</span>: <span style="color: blue;" class="js-darkMode-span">center</span>;
 }
                               
 p {
-    <span style="color: red;">font-family</span>: <span style="color: blue;">verdana</span>;
+    <span style="color: red;">font-family</span>: <span style="color: blue;" class="js-darkMode-span">verdana</span>;
 }
                         </code></pre>
                     </div>
@@ -314,18 +315,18 @@ p {
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-3">JavaScipt Reference</a></div>
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-4">Get Certified</a></div>
                 </div>
-                <div class="slide-4__content-2">
+                <div class="slide-4__content-2 js-darkMode-content">
                     <header class="content-2__heading">JavaScipt Example:</header>
-                    <div class="content-2__text">
+                    <div class="content-2__text js-nav-darkMode">
                         <pre><code>
-&lt;button <span style="color: red;">onclick</span><span style="color: blue;">="myFunction()"</span>&gt;<span style="color: black;">Click Me!</span>
+&lt;button <span style="color: red;">onclick</span><span style="color: blue;" class="js-darkMode-blue">="myFunction()"</span>&gt;<span style="color: black;" class="js-darkMode-span">Click Me!</span>
 &lt;/buttont&gt;
 <br>&lt;script&gt;
-<span style="color: blue;">function</span> <span style="color: black;">myFunction() {</span>
-&nbsp;&nbsp;let <span style="color: black;">x = document.getElementById(</span>"demo"<span style="color: black;">);</span>
-&nbsp;&nbsp;<span style="color: black;">x.style.fontSize =</span> "25px"<span style="color: black;">;</span>
-&nbsp;&nbsp;<span style="color: black;">x.style.color =</span> "red"<span style="color: black;">;</span>
-<span style="color: black;">}</span>
+<span style="color: blue;" class="js-darkMode-blue">function</span> <span style="color: black;" class="js-darkMode-span">myFunction() {</span>
+&nbsp;&nbsp;let <span style="color: black;" class="js-darkMode-span">x = document.getElementById(</span>"demo"<span style="color: black;" class="js-darkMode-span">);</span>
+&nbsp;&nbsp;<span style="color: black;" class="js-darkMode-span">x.style.fontSize =</span> "25px"<span style="color: black;" class="js-darkMode-span">;</span>
+&nbsp;&nbsp;<span style="color: black;" class="js-darkMode-span">x.style.color =</span> "red"<span style="color: black;" class="js-darkMode-span">;</span>
+<span style="color: black;" class="js-darkMode-span">}</span>
 &lt;/script&gt;
                         </code></pre>
                     </div>
@@ -342,12 +343,12 @@ p {
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-3">Python Reference</a></div>
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-4">Get Certified</a></div>
                 </div>
-                <div class="slide-5__content-2">
+                <div class="slide-5__content-2 js-darkMode-content">
                     <header class="content-2__heading">Python Example:</header>
-                    <div class="content-2__text">
+                    <div class="content-2__text js-nav-darkMode">
                         <pre><code>
-<span style="color: blue;">if</span> <span style="color: red;">5</span> > <span style="color: red;">2</span>:
-    <span style="color: black;">print(</span>"Five is greater than two!"<span style="color: black;">)</span>
+<span style="color: blue;" class="js-darkMode-blue">if</span> <span style="color: red;">5</span> > <span style="color: red;">2</span>:
+    <span style="color: black;" class="js-darkMode-span">print(</span>"Five is greater than two!"<span style="color: black;" class="js-darkMode-span">)</span>
                         </code></pre>
                     </div>
                     <button class="content-2__btn"><a href="javascript:void(0);" class="content-2__link">Try it Yourself</a></button>
@@ -363,12 +364,12 @@ p {
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-3">SQL Reference</a></div>
                     <div class="content-1__link"><a href="javascript:void(0);" class="content-1__link-4">Get Certified</a></div>
                 </div>
-                <div class="slide-6__content-2">
+                <div class="slide-6__content-2 js-darkMode-content">
                     <header class="content-2__heading">SQL Example:</header>
-                    <div class="content-2__text">
+                    <div class="content-2__text js-nav-darkMode">
                         <pre><code>
-<span style="color: blue;">SELECT</span> * <span style="color: blue;">FROM</span> Customers
-<span style="color: blue;">WHERE</span> Country=<span style="color: red;">'Mexico'</span>;
+<span style="color: blue;" class="js-darkMode-span">SELECT</span> * <span style="color: blue;" class="js-darkMode-span">FROM</span> Customers
+<span style="color: blue;" class="js-darkMode-span">WHERE</span> Country=<span style="color: red;">'Mexico'</span>;
                         </code></pre>
                     </div>
                     <button class="content-2__btn"><a href="javascript:void(0);" class="content-2__link">Try it Yourself</a></button>
@@ -605,11 +606,11 @@ p {
             </div>
 
             <!-- slide-16 -->
-            <div class="slide-16 slide--center">
+            <div class="slide-16 slide--center js-darkMode-slide16">
                 <div class="slide">
-                    <div class="slide__content ">
-                        <h1 class="slide__header slide__header--16">Web Templates</h1>
-                        <h4 class="slide__sub slide__sub--16">Browse our selection of <span class="item__strong">free</span> responsive HTML Templates</h4>
+                    <div class="slide__content">
+                        <h1 class="slide__header slide__header--16 js-darkMode-slide16">Web Templates</h1>
+                        <h4 class="slide__sub slide__sub--16 js-darkMode-slide16">Browse our selection of <span class="item__strong">free</span> responsive HTML Templates</h4>
                     </div>
                     <div class="slide__body">
                         <a class="body__img slide__img--16" href="javascript:void(0);"><img src="./assets/img/slide16-people.webp" alt="slide16-people"></a>
@@ -667,12 +668,12 @@ p {
                 </div>
             </div>
 
-            <div class="slide-18">
+            <div class="slide-18 js-darkMode-slide16" style="margin-top: -100px; padding-top: 110px;">
                 <div class="slide">
                     <div class="slide__content ">
-                        <h2 class="slide__header slide__header--18">How To Section</h2>
-                        <h4 class="slide__sub slide__sub--18">Code snippets for HTML, CSS and JavaScript</h4>
-                        <h6 class="slide__subb slide__subb--18">For example, how to create a slideshow:</h6>
+                        <h2 class="slide__header slide__header--18 js-darkMode-slide16">How To Section</h2>
+                        <h4 class="slide__sub slide__sub--18 js-darkMode-slide16">Code snippets for HTML, CSS and JavaScript</h4>
+                        <h6 class="slide__subb slide__subb--18 js-darkMode-slide16">For example, how to create a slideshow:</h6>
                     </div><br>
                     <div class="slide__body">
                         <div class="slide__body-header">

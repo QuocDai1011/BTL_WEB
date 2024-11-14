@@ -2480,3 +2480,31 @@ background-color: var(--btn-color); */
     background-color: #1d2a35 !important;
     color: white !important;
 }
+
+.dark-mode__search {
+    color: black;
+    font-weight: 400;
+}
+
+.dark-mode--hover:hover {
+    background-color: #38444d !important;
+    /* color: #000; */
+}
+
+.darkMode-span {
+    color: white !important;
+}
+
+.darkMode-content {
+    background-color: #37454e !important;
+    color: white !important;
+}
+
+.darkMode--green {
+    color: #98c2a4 !important;
+}
+
+.dark-mode__slide16{
+    background-color: #37454e;
+    color: white !important;
+}
