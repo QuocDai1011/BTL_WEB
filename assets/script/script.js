@@ -115,6 +115,7 @@ $(document).ready(function() {
         $('.js-darkMode-content').toggleClass('darkMode-content');
         $('.js-darkMode-blue').toggleClass('darkMode--green');
         $('.js-darkMode-slide16').toggleClass('dark-mode__slide16');
+        // hello world
     })
 });
 
