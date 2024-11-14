@@ -2476,6 +2476,8 @@ background-color: var(--btn-color); */
     margin-bottom: -8px;
 }
 
+/*  */
+
 .dark-mode {
     background-color: #1d2a35 !important;
     color: white !important;
